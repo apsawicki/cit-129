@@ -43,6 +43,35 @@ peer_info = {
 }
 
 
+def dive_deeper():
+    print(peer_info.keys())
+    x = input('Select an option: ')
+    if x in peer_info.keys():
+        print(peer_info[x])
+
+
+def editor():
+    j = input('Would you like to edit? y/n: ')
+    if j == 'y':
+        y = input('What do you want to edit: ')
+        if y not in peer_info:
+            new_key = input('What do you want to change it to: ')
+            [y].append(new_key)
+            del(peer_info[y])
+            print(peer_info.keys())
+        else:
+            print('it didnt work')
+            # return false???, while editor return false run???
+            # return true???, while editor/dive return true prompt exit function???
+
+
+dive_deeper()
+editor()
+
+# def selection():
+#     x = input('What do you select: ')
+#     if x in peer_info.keys():
+#         print('hello')
 
 # book page 165 peer_info.update
 # for x in peer_info:
@@ -64,6 +93,4 @@ peer_info = {
 #         if sel_val == '2':
 #             print(peer_info['dict_food'])
 #         if sel_val == '3':
-#             print(peer_info['dict_animals'])
-
-
+#             print(peer_info['dict_animals'])#
