@@ -61,8 +61,7 @@ def editor():
             print(peer_info.keys())
         else:
             print('it didnt work')
-            # return false???, while editor return false run???
-            # return true???, while editor/dive return true prompt exit function???
+            # use while instead of if
 
 
 dive_deeper()
