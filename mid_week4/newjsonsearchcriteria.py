@@ -13,9 +13,12 @@ status = {}
 area = {}
 asset = {}
 data_dict = {}
+new_dict = {}
 
+# asking the question
 row_select = input('Choose either year, date, area, asset, status: ')
 
+# counter and data for data_dict
 for row in reader_two:
     identity = row['id']
     data_dict[identity] = row
@@ -25,6 +28,7 @@ for row in reader_two:
             year[value] = 1
         else:
             year[value] += 1
+            new_dict = data_dict.copy()
     if row_select == 'date':
         value = row['start_date']
         if value not in year:
@@ -51,6 +55,9 @@ for row in reader_two:
             status[value] += 1
 # make option 6 the one that shows the data through the data dictionary maybe???
 
+
+
+# printing
 if row_select == 'year':
     print(year, end='\n')
 elif row_select == 'date':
@@ -63,6 +70,10 @@ elif row_select == 'status':
     print(status, end='\n')
 else:
     print('ERROR')
-print(data_dict)
-# print newline for each id
+# print(new_dict)
 
+choice = input('Which key would you like to sort by: ')
+for x in new_dict.keys():
+    if data_dict[x]['fiscal_year'] != choice:
+        del data_dict[x]
+print(data_dict)
