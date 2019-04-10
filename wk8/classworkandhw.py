@@ -34,12 +34,13 @@ for x in range(0, 10):
 
 # Prints
 
-print('                       MEAL NAMES:CATEGORIES')
+print('                                   MEAL NAMES:CATEGORIES')
 for x in range(0, 10):
     print(data_dict['meal_names'][x], end=': ')
     print(data_dict['categories'][x], end='\n')
 print('                       PERCENTAGES OF FOOD CATEGORIES IN THE 10 LATEST MEALS')
 for x in counter:
+    # if x == desert then make it print unhealthy percentage of deserts, else print healthy percentages with others categories
     print(x, end=': ')
     print(counter[x] / 10 * 100, '%', end='\n')
 
