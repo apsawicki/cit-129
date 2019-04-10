@@ -16,8 +16,6 @@ soup = BeautifulSoup(response.text, 'html.parser')
 ele = soup.findAll(class_='infocard-lg-data text-muted')
 for items in ele:
     pokemon.append(items.text)
-    # print(items.text)
-# print(pokemon)
 
 for x in range(0, 809):
     if poketype in pokemon[x]:
