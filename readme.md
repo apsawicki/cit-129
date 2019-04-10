@@ -5,7 +5,7 @@ Code that takes the html from a website describing pokemon and scraping the id n
 [Eric Darsow website][idx]
 
 ## Coding resources
-[Python bs4 module official documentation](https://ww)w.crummy.com/software/BeautifulSoup/bs4/doc/)
+[Python bs4 module official documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 ## Uses for we  scraping
 * Learning the ins and outs of bs4/html
