@@ -4,43 +4,18 @@ reader = csv.DictReader(file)
 line_reader = file.readlines()
 
 req_origin = []
-centralCount = 0
+centralCount = {}
 for x in line_reader:
     pghfile = x.split(',')[6]
     req_origin.append(pghfile)
-    for j in req_origin:
-        if j == "Central Northside":
-            centralCount = centralCount + 1
-print(req_origin)
-print(centralCount)
 
-# for row in reader:
-#     row['NEIGHBORHOOD'] = 0
+for y in range(0, 34):
+    query = req_origin[y]
+    if query not in centralCount:
+        centralCount[query] = 1
+    else:
+        centralCount[query] += 1
 
-
-# numCallCenter = 0
-# numReport2GovIOS = 0
-# numReport2GovAndroid = 0
-# numWebsite = 0
-# numTwitter = 0
-# numControlPanel = 0
-#
-# for row in reader:
-#     if row['REQUEST_ORIGIN'] == "Call Center":
-#         numCallCenter = numCallCenter +1
-#     elif row['REQUEST_ORIGIN'] == "Report2GovIOS":
-#         numReport2GovAndroid = numReport2GovAndroid + 1
-#     elif row['REQUEST_ORIGIN'] == "Report2GovAndroid":
-#         numReport2GovAndroid = numReport2GovAndroid + 1
-#     elif row['REQUEST_ORIGIN'] == "Website":
-#         numWebsite = numWebsite + 1
-#     elif row['REQUEST_ORIGIN'] == "Control Panel":
-#         numControlPanel = numControlPanel + 1
-#
-# print(numControlPanel)
-# print(numTwitter)
-# print(numWebsite)
-# print(numReport2GovAndroid)
-# print(numReport2GovIOS)
-# print(numCallCenter)
-#
+print('The amount of pot hole reports per territory', end='\n')
+print(centralCount, end='\n')
+print('The more the number of reports may correlate with the condition of the roads within each territory')

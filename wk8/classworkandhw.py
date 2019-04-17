@@ -27,7 +27,7 @@ for x in range(0, 10):
 
 for x in range(0, 10):
     value = data_dict['categories'][x]
-    if data_dict['categories'][x] not in counter:
+    if value not in counter:
         counter[value] = 1
     else:
         counter[value] += 1
@@ -44,3 +44,4 @@ for x in counter:
     print(x, end=': ')
     print(counter[x] / 10 * 100, '%', end='\n')
 
+print(data_dict['categories'])
