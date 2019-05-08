@@ -11,7 +11,10 @@ There were many aspects of the website that we wished to scrape but unfortunatel
 
 Pokemon that have mega-evolutions used some of the tags that we were previously calling and made it difficult for us to get information on items such as ability.
 
-Make sure to use the file named "FINALPROJECT.PY" within the "wk14finalprojects" directory to access the program
+Make sure to use the file named "FINALPROJECT.PY" within the "wk14finalprojects" directory to access the program.
 
+## Development Ideas
+
+The next steps are to compile information useful for battle situations within the game and put more data into the text file and use that data to show more information about the pokemon.
 
 [idx]:https://pokemondb.net/pokedex/national
