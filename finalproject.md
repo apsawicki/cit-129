@@ -1,7 +1,7 @@
 # DAT-129
 ## Pokemon Website Scraping
 
-Took pokemon name, id, type, and effectiviness from a [pokemon database][idx] and made a text file of the id, name, and type with json,  html, beautiful soup, requests, and regular expressionsso others may use the data for their own purposes. The website and program can also be used to find out a variety of different things about pokemon and list them out in an easy format for people to understand. 
+Took pokemon name, id, type, and effectiviness from a [pokemon database][idx] and made a text file of the id, name, and type with json,  html, beautiful soup, requests, and regular expressions so others may use the data for their own purposes. The website and program can also be used to find out a variety of different things about pokemon and list them out in an easy format for people to understand. 
 
 ## Complications
 
@@ -11,6 +11,7 @@ There were many aspects of the website that we wished to scrape but unfortunatel
 
 Pokemon that have mega-evolutions used some of the tags that we were previously calling and made it difficult for us to get information on items such as ability.
 
+Make sure to use the file named "FINALPROJECT.PY" to access the program
 
 
 [idx]:https://pokemondb.net/pokedex/national
