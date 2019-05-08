@@ -16,7 +16,7 @@ def adder():
 
 def multiplier():
     for x in range(1, len(numbers)):
-        numbers[0] = numbers[x] * numbers[x]
+        numbers[0] = numbers[0] * numbers[x]
         print(numbers[0])
 
 
@@ -35,8 +35,9 @@ while stopper is 'n':
 else:
     decision()
 
+
 '''
-Extension Exercises: 
+Next Exercises: 
 1. Add subtracting function to the calculator
 2. Add standard deviation function without use of the built in stdev function
 3. Remove all 'def' functions and rewrite code to use lambda

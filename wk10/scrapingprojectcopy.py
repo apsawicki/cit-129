@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 
+# scrape into a useful format (maybe searching)(put into nicely formatted text file)(html website)
+
 pokemon = []
 types = ['Normal', 'Fire', 'Water', 'Electric', 'Grass', 'Ice', 'Fighting', 'Poison', 'Ground', 'Flying',
          'Psychic', 'Bug', 'Rock', 'Ghost', 'Dragon', 'Dark', 'Steel', 'Fairy']

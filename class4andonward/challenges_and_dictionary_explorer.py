@@ -30,40 +30,40 @@
 #        print((labels["alpha"]) * 3, str(listoflists[2][k]), end='\n')
 #
 # Dictionary cursor
-#
-# peer_info = {
-#     'dict_names': ['alex', 'owen', 'eric'],
-#     'dict_food': ['chips', 'water', 'orange'],
-#     'dict_animals': ['dog', 'cat', 'mouse']
-# }
-#
-# option = ''
-#
-#
-# def dive_deeper():
-#     print(peer_info.keys())
-#     global option
-#     option = input('Select an option: ')
-#     if option in peer_info.keys():
-#         print(peer_info[option])
-#
-#
-# def editor():
-#     query = input('Would you like to edit? y/n: ')
-#     if query == 'y':
-#         edit = int(input('Which number item do you want to change: '))
-#         new_key = input('What do you want to change it to: ')
-#         peer_info[option].append(new_key)
-#         del(peer_info[option][edit])
-#         print(peer_info[option])
-#
-#
-# while True:
-#     dive_deeper()
-#     editor()
-#     again = input('Wanna keep going? y/n: ')
-#     if again == 'y' or 'yes':
-#         continue
-#     else:
-#         quit()
+
+peer_info = {
+    'dict_names': ['alex', 'owen', 'eric'],
+    'dict_food': ['chips', 'water', 'orange'],
+    'dict_animals': ['dog', 'cat', 'mouse']
+}
+
+option = ''
+
+
+def dive_deeper():
+    print(peer_info.keys())
+    global option
+    option = input('Select an option: ')
+    if option in peer_info.keys():
+        print(peer_info[option])
+
+
+def editor():
+    query = input('Would you like to edit? y/n: ')
+    if query == 'y':
+        edit = int(input('Which number item do you want to change: '))
+        new_key = input('What do you want to change it to: ')
+        peer_info[option].append(new_key)
+        del(peer_info[option][edit])
+        print(peer_info[option])
+
+
+while True:
+    dive_deeper()
+    editor()
+    again = input('Wanna keep going? y/n: ')
+    if again == 'y' or 'yes':
+        continue
+    else:
+        quit()
 
